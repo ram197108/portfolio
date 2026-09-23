@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #660213;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+#vj {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: aqua;
+    min-height: 80px;
+    padding: 10px 30px;
+}
+
+#vj h2 {
+    margin: 0;
+}
+
+#vj img {
+    width: 70px;
+    height: 70px;
+    border: 8px solid #98F7FA;
+    border-radius: 50%;
+    margin-left: 50px;
+    border-bottom-color: #660213;
+    object-fit: cover;
+}
+
+#vj ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+#vj ul li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+#vj ul li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+
+/* ================= HOME ================= */
+
+#one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #DBF291;
+    color: black;
+    border: 20px solid #DBF291;
+    border-radius: 20px;
+    animation-name: one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    padding: 20px;
+}
+
+@keyframes one {
+    0% {
+        background-color: #FC8F79;
+    }
+
+    20% {
+        background-color: #FCE079;
+    }
+
+    40% {
+        background-color: #ADFC79;
+    }
+
+    60% {
+        background-color: #79FC9A;
+    }
+
+    80% {
+        background-color: #79FCD7;
+    }
+
+    100% {
+        background-color: #BD79FC;
+    }
+}
+
+#one img {
+    width: 30%;
+    max-width: 300px;
+    height: 400px;
+    border: 20px solid #DBF291;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+/* ================= SKILLS ================= */
+
+#two {
+    display: flex;
+    align-items: center;
+    background-color: #BFA0EB;
+    color: black;
+    border: 20px solid #BFA0EB;
+    border-radius: 20px;
+    animation-name: two;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    padding: 30px;
+}
+
+@keyframes two {
+    0% {
+        background-color: #FC8F79;
+    }
+
+    20% {
+        background-color: #FCE079;
+    }
+
+    40% {
+        background-color: #ADFC79;
+    }
+
+    60% {
+        background-color: #79FC9A;
+    }
+
+    80% {
+        background-color: #79FCD7;
+    }
+
+    100% {
+        background-color: #BD79FC;
+    }
+}
+
+#two img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#two div {
+    padding-left: 100px;
+}
+
+
+/* ================= ACHIEVEMENTS ================= */
+
+#three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: violet;
+    color: black;
+    border: 20px solid violet;
+    border-radius: 20px;
+    animation-name: three;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    padding: 30px;
+}
+
+@keyframes three {
+    0% {
+        background-color: #FC8F79;
+    }
+
+    20% {
+        background-color: #FCE079;
+    }
+
+    40% {
+        background-color: #ADFC79;
+    }
+
+    60% {
+        background-color: #79FC9A;
+    }
+
+    80% {
+        background-color: #79FCD7;
+    }
+
+    100% {
+        background-color: #BD79FC;
+    }
+}
+
+#three img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ================= CONTACT ================= */
+
+#four {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6956FC;
+    border: 20px solid #6956FC;
+    border-radius: 20px;
+    animation-name: four;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    padding: 30px;
+}
+
+@keyframes four {
+    0% {
+        background-color: #FC8F79;
+    }
+
+    20% {
+        background-color: #FCE079;
+    }
+
+    40% {
+        background-color: #ADFC79;
+    }
+
+    60% {
+        background-color: #79FC9A;
+    }
+
+    80% {
+        background-color: #79FCD7;
+    }
+
+    100% {
+        background-color: #BD79FC;
+    }
+}
+
+#four div {
+    margin: 20px;
+}
+
+#four div p {
+    padding: 20px;
+}
+
+#seven {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media screen and (max-width: 900px) {
+
+    #vj {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #vj img {
+        margin-left: 30px;
+    }
+
+    #vj ul {
+        margin: 10px auto;
+    }
+
+    #one img {
+        width: 30%;
+        height: 300px;
+    }
+
+    #two img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #two div {
+        padding-left: 40px;
+    }
+
+    #three img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #four {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* NAVBAR */
+
+    #vj {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    #vj h2 {
+        margin-bottom: 15px;
+    }
+
+    #vj img {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+    }
+
+    #vj ul {
+        flex-direction: column;
+        margin: 15px 0 0 0;
+        padding: 0;
+        gap: 5px;
+        text-align: center;
+    }
+
+    #vj ul li {
+        padding: 8px;
+    }
+
+
+    /* HOME */
+
+    #one {
+        flex-direction: column;
+        border-width: 10px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #one img {
+        width: 90%;
+        max-width: 300px;
+        height: 300px;
+        border-width: 10px;
+        padding: 0;
+    }
+
+
+    /* SKILLS */
+
+    #two {
+        flex-direction: column;
+        border-width: 10px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    #two img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    #two div {
+        padding-left: 0;
+    }
+
+    #two ul {
+        padding-left: 25px;
+    }
+
+
+    /* ACHIEVEMENTS */
+
+    #three {
+        flex-direction: column;
+        border-width: 10px;
+        padding: 15px;
+    }
+
+    #three img {
+        width: 250px;
+        height: 250px;
+        margin: 20px 0 0 0;
+    }
+
+    #three ul {
+        padding-left: 25px;
+    }
+
+
+    /* CONTACT */
+
+    #four {
+        flex-direction: column;
+        min-height: auto;
+        border-width: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #four div {
+        margin: 10px;
+    }
+
+    #four div p {
+        padding: 10px;
+    }
+
+
+    /* FOOTER */
+
+    #seven {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="vj">
+
+    <h2>Ramasamy</h2>
+
+    <img src="C:\Users\ramas\OneDrive\Desktop\Css\ram round.jpg">
+
+    <ul>
+        <li><a href="#one">Home</a></li>
+        <li>About</li>
+        <li><a href="#two">Skill</a></li>
+        <li>Contact</li>
+    </ul>
+
+</div>
+
+
+<br>
+
+
+<!-- ================= HOME ================= -->
+
+<div id="one">
+
+    <img src="C:\Users\ramas\OneDrive\Desktop\Css\ram img.jpg">
+
+    <img src="C:\Users\ramas\OneDrive\Desktop\Css\RAM.jpg">
+
+    <img src="C:\Users\ramas\OneDrive\Desktop\Css\ram round.jpg">
+
+</div>
+
+
+<br><br>
+
+
+<!-- ================= SKILLS ================= -->
+
+<div id="two">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblP5WJi4rG-OpD-Ownl_aQ9GGCTRInkDblQLO1RA2rw&s=10">
+
+    <div>
+
+        <ul>
+            <li>Python</li>
+            <li>English speaking</li>
+            <li>IIT chemical engineering</li>
+            <li>IIT electric circuit</li>
+            <li>Speed reading</li>
+            <li>Filtering information</li>
+            <li>Memory retaining</li>
+            <li>Communication skill</li>
+            <li>Leadership quality</li>
+            <li>Research and innovation skill</li>
+            <li>Teamwork</li>
+            <li>Creative thinking</li>
+            <li>Networking</li>
+            <li>Adaptability</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<br><br>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<div id="three">
+
+    <div>
+
+        <ul>
+            <li>Rajaya Puraskar</li>
+            <li>Academics</li>
+            <li>Leadership</li>
+            <li>Community service</li>
+            <li>Extracurricular activities</li>
+            <li>Leadership</li>
+            <li>Academics</li>
+            <li>Rajaya Puraskar</li>
+            <li>Academics</li>
+            <li>Leadership</li>
+            <li>Community service</li>
+            <li>Extracurricular activities</li>
+            <li>Leadership</li>
+            <li>Academics</li>
+        </ul>
+
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgE-kIlYheowH4ye27P7eBz1M1OBfVRc7XTCzQYpjQBQ&s=10">
+
+</div>
+
+
+<br><br>
+
+
+<!-- ================= CONTACT ================= -->
+
+<div id="four">
+
+    <div>
+        <h3>Contact:</h3>
+        <p>Number: 9873293728</p>
+    </div>
+
+    <div>
+        <h3>Address:</h3>
+        <p>Plot No: 10</p>
+    </div>
+
+    <div>
+        <h3>Email:</h3>
+        <p>kumarmohammedjames@gmail.com</p>
+    </div>
+
+</div>
+
+
+<br><br>
+
+
+<!-- ================= FOOTER ================= -->
+
+<div id="seven">
+
+    &copy; Done by Ramasamy
+
+</div>
+
+</body>
+</html>
